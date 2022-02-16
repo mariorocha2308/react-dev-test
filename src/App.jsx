@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/:id" element={<> <Menu/> <Form/></>} />
+        <Route path='*' element={<> <Menu/> <Form/></>} />
       </Routes>
     </div>
   )

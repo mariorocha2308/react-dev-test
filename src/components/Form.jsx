@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
-import { useParams } from 'react-router-dom';
+import { useLocation} from 'react-router-dom';
 import '../sass/form.scss'
 
 const Form = () => {
-
+    
     const { register, handleSubmit, resetField, formState: { errors } } = useForm();
     const [isShow, setIsShow] = useState()
-    const { id } = useParams()
+    const location = useLocation()
+    let id = location.pathname
 
     const onSubmit = (data) => {
         console.log(data);
@@ -30,7 +31,7 @@ const Form = () => {
             <form onSubmit={handleSubmit(onSubmit)} className='form'>
                 <div className='form-input--text'>
                     <div>
-                        <h1>Hola, bienvenido, <br/> sabemos que quieres viajar en un {id}</h1>
+                        <h1>Hola, bienvenido, <br/> sabemos que quieres viajar en un {id.substring(1)}</h1>
                     </div>
                     <input 
                         type="text"  
