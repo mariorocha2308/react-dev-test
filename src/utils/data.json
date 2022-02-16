@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Vivair"
+    },
+    {
+        "id": 2,
+        "name": "Avianca"
+    },
+    {
+        "id": 3,
+        "name": "Volaris"
+    },
+    {
+        "id": 4,
+        "name": "Aeroméxico"
+    },
+    {
+        "id": 5,
+        "name": "Interjet"
+    },
+    {
+        "id": 6,
+        "name": "Calafia"
+    },
+    {
+        "id": 7,
+        "name": "Aerobus"
+    },
+    {
+        "id": 8,
+        "name": "Aeromar"
+    },
+    {
+        "id": 10,
+        "name": "Avelo"
+    },
+    {
+        "id": 11,
+        "name": "Emirates"
+    }
+]

@@ -1,0 +1,77 @@
+@import './variables.scss';
+@import './colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.block-form {
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.form{
+    width: 50%;
+}
+
+.form-input--text{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input--number {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-input {
+    border: none;
+    margin-top: 1rem;
+    outline: none;
+    background-color: $opacity-grey;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-input::placeholder {
+    color: $grey-30;
+    font-family: $font-name;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form-warning {
+    color: $red;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.form-button {
+    border: none;
+    padding: 10px;
+    background-color: $green;
+    color: $white;
+    font-family: $font-name;
+    font-weight: bold;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.form-button:active {
+    transform: scale(.95);
+}
+
+.ligthBox {
+    margin-top: 6rem;
+    padding: 1rem;
+    background-color: $opacity-blue;
+    color: $blue;
+    font-family: $font-name;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .form-input--number {
+        flex-direction: column;
+    }
+}

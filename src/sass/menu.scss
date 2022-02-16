@@ -1,0 +1,72 @@
+@import './variables.scss';
+@import './colors.scss';
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    max-width: 992px;
+    margin: 0 auto;
+    background-color: $opacity-grey;
+}
+
+.nav-menu {
+    width: 80%;
+}
+
+.list-airlines {
+    display: flex;
+    list-style: none;
+}
+
+.airline {
+    margin-right: 15px;
+}
+
+.airline-item {
+    color: $grey;
+    font-weight: 700;
+}
+
+.airline-item:hover {
+    background-color: $opacity-orange;
+    color: $orange;
+    padding: 0.5rem;
+}
+
+.nav-toggle {
+    display: none
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .nav-menu {
+        position: fixed;
+        width: 40%;
+        min-width: 30%;
+        height: 100%;
+        top: 41px;
+        background-color: $grey-clair;
+        transition: right 0.7s linear;
+    }
+
+    .list-airlines {
+        flex-direction: column;
+    }
+
+    .airline {
+        margin-top: 1rem;
+    }
+
+    .nav{
+        justify-content: flex-end;
+    }
+    
+    .nav-toggle {
+        display: contents;
+        border: none;
+        background-color: transparent;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
